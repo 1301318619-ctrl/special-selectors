@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: rgb(135, 23, 23);
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: rgb(132, 184, 235);
+    font-style: italic;
+}
+
+li:active {
+    background-color: rgb(250, 209, 216);
+    font-size: 30px;
+}
+
+li::before {
+    content: "✓";
+}
+
+li:hover::after {
+    content: "pick me";
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+li:active::after {
+    content: "yay";
+}
+
+li:active::before {
+    content: "🩷";
+}
